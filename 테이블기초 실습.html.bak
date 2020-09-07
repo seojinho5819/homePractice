@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+ <title>Document</title>
+</head>
+<style>
+body{
+background-image:url("./images/apple.jpg");
+background-repeat:no-repeat;
+font-size:30px;
+}
+	input{
+	background:dodgerblue;
+	color:white;/*그냥 컬러인경우 글씨색을 의미*/
+}
+table{
+	border:2px solid red;/*두께를 2,빨간 wja선*/
+}
+td {
+		font-size :9pt;
+		background:yellow;
+
+}
+div{
+	width:200px;
+}
+a{
+	text-decoration:none;/*링크 밑줄 제거*/
+	display:block;
+	background:#c4c4c4;
+}
+.titleSytle{
+	background:red;
+}
+#wrapper{
+	width:500px;
+	height:500px;
+	background:yellow;
+	margin:auto;
+}
+#content1{
+width:50%;
+height:400px;
+background:red;
+float:left;
+}
+#content2{
+width:50%;
+height:400px;
+background:green;
+float:left;
+}
+#footer{
+width:500px;
+height:100px;
+background:blue;
+clear:left;
+}
+#box1{
+	width:80px;
+	height:80px;
+	background:red;
+	margin-bottom:30px;
+	padding-left:20px;
+	padding-top:20px;
+}
+#box2{
+	width:100px;
+	height:200px;
+	background:blue;
+}
+iframe{
+
+		position:absolute;
+		left:500px;
+		top:500px;
+		border:5px;
+	}
+</style>
+<body>
+
+	<table width ="600px" border ="2px" align ="center">
+		<tr>
+			<td colspan ="2" align ="center"style = "font-size:100px">회원가입</font></td>
+		</tr>
+		<tr>
+			<td style = "font-size:9px">ID</td>
+			<td><input type ="text" placeholder= "아이디 입력.."/></td>
+		</tr>
+		<tr>
+			<td style = "font-size:9px">PW</td>
+			<td><input type ="text" placeholder= "비밀번호 입력.."/></td>
+		</tr>
+			<tr>
+			<td style = "font-size:9px">Name</td>
+			<td><input type ="text" placeholder= "이름 입력.."/></td>
+		</tr>
+		<tr>
+			<td style = "font-size:9px">연락처</td>
+			<td><select>
+				<option>010</option>
+				<option>011</option>
+				<option>019</option>
+				<option>017</option>
+			</select>
+			<input type ="text" placeholder= "앞자리" size ="5pt"/>
+			<input type ="text" placeholder= "뒷자리" size ="5pt"/>
+		</td></tr>
+		<tr>
+			<td style = "font-size:9px">hobby</td>
+			<td>
+				travle<input type ="checkbox">
+				book<input type ="checkbox">
+				exercise<input type ="checkbox">
+				fishing<input type ="checkbox">
+			</td>
+		</tr>
+		<tr>
+			<td stlye ="font-size:9px">e-mail</td>
+			<td>
+				<input type="text" placeholder="mail Id">@
+				<select>
+					<option>naver</option>
+					<option>hanmail</option>
+					<option>daum</option>
+					<option>nate</option>
+				
+			</td>
+		</tr>
+		<tr>
+			<td style = "font-size:9px">receive mail?</td>
+			<td>
+				yes<input type= "radio" name="receive" />
+				no<input type= "radio" name="receive"/>
+			</td>
+		</tr>
+		<tr>
+			<td style="font-size:9px">mail-add</td>
+			<td>
+				<input type="text" placeholder="search mail-add">
+				<button>mail-number</button>
+			</td>
+
+		</tr>
+		<tr>
+			<td colspan = "2" align="center">
+			<button>Sign in</button>
+			</td>
+		</tr>
+
+	</table>
+	<img src="./images/apple.jpg"/>
+	<div>
+	<a href="#" class ="titleStyle">1일차</a>
+	<a href="https://www.coupang.com/"target="main">쿠팡으로 이동</a>
+	<iframe src = "http://www.nate.com/" name="main"></iframe>
+	<a href="#">예제4</a>
+</div>
+<div>
+	<a href="#" class ="titleStyle">2일차</a>
+	<a href="#">예제2</a>
+	<a href="#">예제3</a>
+	<a href="#">예제4</a>
+</div>
+<div>
+	<a href="#" class ="titleStyle">3일차</a>
+	<a href="#">예제2</a>
+	<a href="#">예제3</a>
+	<a href="#">예제4</a>
+</div>
+<video width="500px" height="400px" controls>
+	<source src="https://w3schools.com/html/mov_bbb.mp4">
+</video>
+<div id= "wrapper">
+	<div id="content1">left</div>
+	<div id="content2">right</div>
+	<div id="footer">footer</div>
+</div>
+<div id="box1">내용물</div>
+<div id="box2">내용물</div>
+</body>
+</html>
